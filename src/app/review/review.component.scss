@@ -1,0 +1,22 @@
+@import '_fonts';
+
+:host {
+    width: 327px;
+    height: 78px;
+    border-radius: 8px;
+    background: $magent-grayish-light;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+
+
+    .stars {
+        flex: 0 1 30%;
+        margin: auto;
+    }
+
+    .review {
+        @include review;
+        flex: 0 1 100%;
+    }
+}
