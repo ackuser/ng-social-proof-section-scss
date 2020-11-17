@@ -7,8 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ReviewComponent implements OnInit {
 
-  @Input() desc: string;
-
   constructor() { }
 
   ngOnInit() {

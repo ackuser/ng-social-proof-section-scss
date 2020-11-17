@@ -21,6 +21,13 @@
     text-align: center;
 }
 
+@mixin buyer($size: 13px, $color: $white, $weight: 500) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: start;
+}
+
 // @mixin figure($size: small, $color: $violet-moderate) {
 //     color: $color;
 //     font-size: $size;

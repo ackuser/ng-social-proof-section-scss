@@ -1,0 +1,8 @@
+<div class="description">
+  <img class="avatar" [src]="'../../assets/images/image-'+ src +'.jpg'" alt="Avatar" />
+  <div class="description__right">
+    <ng-content select=".name"></ng-content>
+    <p class="verified">Verified Buyer</p>
+  </div>
+</div>
+<ng-content select=".info"></ng-content>

@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReviewComponent } from './review/review.component';
 import { StarsComponent } from './stars/stars.component';
+import { BuyerComponent } from './buyer/buyer.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     ReviewComponent,
-    StarsComponent
-  ],
+    StarsComponent,
+      BuyerComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
