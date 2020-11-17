@@ -1,7 +1,7 @@
 @import '_colors';
 
 @mixin moreSize($size, $moreSize: 4px, $lineHeight: normal) {
-    @media only screen and (min-width: 375px) and (max-width: 1024px) and (orientation:portrait) {
+    @media screen and (min-width: 415px) and (max-width: 1023px) and (orientation:portrait) {
         font-size: calc(#{$size} + #{$moreSize});
         line-height: $lineHeight;
     }
@@ -15,12 +15,12 @@
     @include moreSize($size: $size, $moreSize: 2px)
 }
 
-@mixin subtitle($size: 15px, $color: $magent-grayish-dark) {
+@mixin subtitle($size: 14px, $color: $magent-grayish-dark) {
     color: $color;
     font-size: $size;
     font-weight: 500;
     text-align: center;
-    @include moreSize($size: $size, $lineHeight: 2)
+    @include moreSize($size: $size)
 }
 
 @mixin review($size: 13px, $color: $magent-verydark) {
@@ -28,7 +28,7 @@
     font-size: $size;
     font-weight: 700;
     text-align: center;
-    @include moreSize($size,$lineHeight: 1.2);
+    @include moreSize($size, $lineHeight: 1.2);
 }
 
 @mixin buyer($size: 13px, $color: $white, $weight: 500) {
