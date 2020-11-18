@@ -4,7 +4,7 @@
     width: 327px;
     height: 248px;
     border-radius: 8px;
-    padding: 30px 24px;
+    padding: 30px 27px;
     background: $magent-verydark;
     display: flex;
     flex-direction: column;
@@ -17,35 +17,34 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         .avatar {
             width: 40px;
             height: 40px;
             border-radius: 50%;
         }
-        
-        &__right{
+
+        &__right {
             flex: .8 1 auto;
             display: flex;
             flex-direction: column;
-            
+
             ::ng-deep .name {
                 @include buyer($weight: 700, $color: $white);
                 margin-bottom: 4px;
             }
-            
+
             .verified {
                 @include buyer($color: $pink-soft);
                 margin-top: 4px;
             }
         }
-    
+
     }
 
     ::ng-deep .info {
-        @include buyer($weight: 500, $color: $white);
+        @include buyer($weight: 500, $color: $white, $lineHeight: 2.2);
         flex: 0 1 80%;
         width: 100%;
-        line-height: 2;
     }
 }
