@@ -8,11 +8,22 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
+    align-items: center;
 
+    @media screen and (min-width: 1024px) {
+        width: 445px;
+        height: 56px;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
 
     .stars {
         flex: 0 1 30%;
         margin: auto;
+
+        @media screen and (min-width: 1024px) {
+            margin-left: 10%;
+        }
     }
 
     .review {

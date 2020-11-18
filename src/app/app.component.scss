@@ -125,6 +125,29 @@ $grid-block-lg: calc(11 * #{$grid-cell-lg});
             .review {
                 margin: calc(#{$grid-cell-sm} / 2) auto;
             }
+
+
+            @media screen and (min-width: 1024px) {
+                grid-column: 6 / 10;
+                grid-row: 2 / 4;
+                
+                margin: 0;
+                
+                .review {
+
+                    &--1{
+                        margin-left: $grid-cell-lg;
+                    }
+
+                    &--2{
+                        margin-left: calc(#{$grid-cell-lg} * 5);
+                    }
+
+                    &--3{
+                        margin-left: calc(#{$grid-cell-lg} * 9);
+                    }
+                }
+            }
         }
 
         &--3 {

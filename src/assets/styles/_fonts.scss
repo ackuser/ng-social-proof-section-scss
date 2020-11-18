@@ -1,12 +1,5 @@
 @import '_colors';
 
-@mixin moreSize($size, $moreSize: 4px, $lineHeight: normal) {
-    @media screen and (min-width: 415px) and (max-width: 1023px) and (orientation:portrait) {
-        font-size: calc(#{$size} + #{$moreSize});
-        line-height: $lineHeight;
-    }
-}
-
 @mixin title {
     color: $magent-verydark;
     font-size: 32px;
@@ -41,7 +34,6 @@
     font-size: $size;
     font-weight: 700;
     text-align: center;
-    @include moreSize($size, $lineHeight: 1.2);
 }
 
 @mixin buyer($size: 13px, $color: $white, $weight: 500, $lineHeight: normal) {
@@ -50,5 +42,4 @@
     font-weight: $weight;
     text-align: start;
     line-height: $lineHeight;
-    @include moreSize($size, $moreSize: 2px);
 }
